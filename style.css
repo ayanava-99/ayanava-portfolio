@@ -635,6 +635,23 @@ img {
     gap: 12px;
 }
 
+.timeline-header-left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.timeline-logo {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: contain;
+    background: #fff;
+    padding: 4px;
+    border: 2px solid var(--border-color);
+    flex-shrink: 0;
+}
+
 .timeline-header h3 {
     font-size: 1.2rem;
     font-weight: 700;
@@ -698,13 +715,21 @@ img {
     width: 56px;
     height: 56px;
     border-radius: 14px;
-    background: var(--accent-gradient);
+    background: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.4rem;
     color: #fff;
     flex-shrink: 0;
+    overflow: hidden;
+    padding: 6px;
+}
+
+.company-logo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .exp-header h3 {

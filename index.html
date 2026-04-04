@@ -39,7 +39,7 @@
                 <li><a href="#experience" class="nav-link">Experience</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#research" class="nav-link">Research</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
             <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
@@ -253,19 +253,22 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- Featured Projects Section -->
     <section class="section section-alt" id="projects">
         <div class="container">
             <h2 class="section-title reveal">
                 <span class="section-number">04.</span> Featured Projects
             </h2>
             <div class="projects-grid">
-                <div class="project-card glass-card reveal">
+                <div class="project-card glass-card reveal" data-tilt data-tilt-max="5" data-tilt-glare data-tilt-max-glare="0.1">
                     <div class="project-card-header">
                         <div class="project-icon">
                             <i class="fas fa-users-cog"></i>
                         </div>
                         <div class="project-links">
+                            <a href="https://github.com/ayanava-99/portfolio" target="_blank" rel="noopener" class="project-link" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
                             <a href="https://tpc-iitp.streamlit.app/" target="_blank" rel="noopener" class="project-link" aria-label="Live Demo">
                                 <i class="fas fa-external-link-alt"></i>
                             </a>
@@ -280,20 +283,23 @@
                     <div class="project-tech">
                         <span>Python</span>
                         <span>Streamlit</span>
+                        <span>Supabase</span>
                         <span>Google Sheets API</span>
-                        <span>pyotp</span>
                     </div>
                     <a href="https://tpc-iitp.streamlit.app/" target="_blank" rel="noopener" class="project-live-btn">
                         <i class="fas fa-play-circle"></i> Live Demo
                     </a>
                 </div>
 
-                <div class="project-card glass-card reveal">
+                <div class="project-card glass-card reveal" data-tilt data-tilt-max="5" data-tilt-glare data-tilt-max-glare="0.1">
                     <div class="project-card-header">
                         <div class="project-icon">
                             <i class="fas fa-shield-alt"></i>
                         </div>
                         <div class="project-links">
+                            <a href="https://github.com/ayanava-99/toxic-comment-detector-app" target="_blank" rel="noopener" class="project-link" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
                             <a href="https://genai-iitp.streamlit.app/" target="_blank" rel="noopener" class="project-link" aria-label="Live Demo">
                                 <i class="fas fa-external-link-alt"></i>
                             </a>
@@ -319,11 +325,157 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section class="section" id="skills">
+    <!-- All Projects Section -->
+    <section class="section" id="all-projects">
         <div class="container">
             <h2 class="section-title reveal">
-                <span class="section-number">05.</span> Technical Arsenal
+                <span class="section-number">05.</span> All Projects
+            </h2>
+            <div class="all-projects-grid">
+                <!-- AutoML Insight Engine - Ongoing -->
+                <div class="mini-project-card glass-card reveal" data-tilt data-tilt-max="4" data-tilt-glare data-tilt-max-glare="0.08">
+                    <div class="mini-project-status ongoing"><i class="fas fa-spinner fa-spin"></i> Ongoing</div>
+                    <div class="mini-project-header">
+                        <div class="mini-project-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="mini-project-links">
+                            <span class="project-link private-badge" title="Private Repository">
+                                <i class="fas fa-lock"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <h3 class="mini-project-title">AutoML Insight Engine</h3>
+                    <p class="mini-project-desc">
+                        End-to-end automated ML pipeline with intelligent feature engineering, model selection, hyperparameter tuning, and interpretable SHAP-based explanations.
+                    </p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Scikit-learn</span>
+                        <span>SHAP</span>
+                        <span>Optuna</span>
+                    </div>
+                </div>
+
+                <!-- ML Model Analyser -->
+                <div class="mini-project-card glass-card reveal" data-tilt data-tilt-max="4" data-tilt-glare data-tilt-max-glare="0.08">
+                    <div class="mini-project-header">
+                        <div class="mini-project-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <div class="mini-project-links">
+                            <a href="https://github.com/ayanava-99/ML-Model-Analyser" target="_blank" rel="noopener" class="project-link" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="mini-project-title">ML Model Analyser</h3>
+                    <p class="mini-project-desc">
+                        Interactive toolkit for comparing ML model performance with automated drift detection, metrics visualization, and bias analysis across datasets.
+                    </p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Pandas</span>
+                        <span>Matplotlib</span>
+                        <span>Scikit-learn</span>
+                    </div>
+                    <a href="https://github.com/ayanava-99/ML-Model-Analyser" target="_blank" rel="noopener" class="project-live-btn">
+                        <i class="fab fa-github"></i> View Code
+                    </a>
+                </div>
+
+                <!-- CS5105 Course Projects -->
+                <div class="mini-project-card glass-card reveal" data-tilt data-tilt-max="4" data-tilt-glare data-tilt-max-glare="0.08">
+                    <div class="mini-project-header">
+                        <div class="mini-project-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="mini-project-links">
+                            <a href="https://github.com/ayanava-99/2511AI61_CS5105_2025" target="_blank" rel="noopener" class="project-link" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="mini-project-title">Advanced AI Coursework</h3>
+                    <p class="mini-project-desc">
+                        Collection of advanced AI/ML assignments from IIT Patna's CS5105 course — covering optimization algorithms, probabilistic models, and neural architectures.
+                    </p>
+                    <div class="project-tech">
+                        <span>C++</span>
+                        <span>Python</span>
+                        <span>Algorithms</span>
+                        <span>Neural Networks</span>
+                    </div>
+                    <a href="https://github.com/ayanava-99/2511AI61_CS5105_2025" target="_blank" rel="noopener" class="project-live-btn">
+                        <i class="fab fa-github"></i> View Code
+                    </a>
+                </div>
+
+                <!-- ControlNet Image Generation -->
+                <div class="mini-project-card glass-card reveal" data-tilt data-tilt-max="4" data-tilt-glare data-tilt-max-glare="0.08">
+                    <div class="mini-project-header">
+                        <div class="mini-project-icon">
+                            <i class="fas fa-image"></i>
+                        </div>
+                        <div class="mini-project-links">
+                            <a href="https://github.com/ayanava-99/Control-net_image_generation" target="_blank" rel="noopener" class="project-link" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="mini-project-title">ControlNet Image Generation</h3>
+                    <p class="mini-project-desc">
+                        Implemented Stable Diffusion with ControlNet conditioning for precise, edge-guided image generation. Supports Canny edge, pose estimation, and depth-map inputs.
+                    </p>
+                    <div class="project-tech">
+                        <span>PyTorch</span>
+                        <span>Diffusers</span>
+                        <span>ControlNet</span>
+                        <span>Stable Diffusion</span>
+                    </div>
+                    <a href="https://github.com/ayanava-99/Control-net_image_generation" target="_blank" rel="noopener" class="project-live-btn">
+                        <i class="fab fa-github"></i> View Code
+                    </a>
+                </div>
+
+                <!-- Toxic Comment Detector App (repo card) -->
+                <div class="mini-project-card glass-card reveal" data-tilt data-tilt-max="4" data-tilt-glare data-tilt-max-glare="0.08">
+                    <div class="mini-project-header">
+                        <div class="mini-project-icon">
+                            <i class="fas fa-comment-slash"></i>
+                        </div>
+                        <div class="mini-project-links">
+                            <a href="https://github.com/ayanava-99/toxic-comment-detector-app" target="_blank" rel="noopener" class="project-link" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://genai-iitp.streamlit.app/" target="_blank" rel="noopener" class="project-link" aria-label="Live Demo">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="mini-project-title">Toxic Comment App (Streamlit)</h3>
+                    <p class="mini-project-desc">
+                        Production-ready Streamlit deployment of the Toxic Comment Detector with real-time YouTube comment scraping, toxicity dashboards, and batch analysis.
+                    </p>
+                    <div class="project-tech">
+                        <span>Streamlit</span>
+                        <span>PyTorch</span>
+                        <span>YouTube API</span>
+                        <span>Plotly</span>
+                    </div>
+                    <a href="https://genai-iitp.streamlit.app/" target="_blank" rel="noopener" class="project-live-btn">
+                        <i class="fas fa-play-circle"></i> Live Demo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section section-alt" id="skills">
+        <div class="container">
+            <h2 class="section-title reveal">
+                <span class="section-number">06.</span> Technical Arsenal
             </h2>
             <div class="skills-grid">
                 <div class="skill-category glass-card reveal">
@@ -389,10 +541,10 @@
     </section>
 
     <!-- Certifications Section -->
-    <section class="section section-alt" id="certifications">
+    <section class="section" id="certifications">
         <div class="container">
             <h2 class="section-title reveal">
-                <span class="section-number">06.</span> Certifications
+                <span class="section-number">07.</span> Certifications
             </h2>
             <div class="certs-grid">
                 <a href="https://learn.microsoft.com/api/credentials/share/en-us/AyanavaDutta-7682/1CA696AE5E17C6E8?sharingId=7A082EA545555152" target="_blank" rel="noopener" class="cert-card glass-card reveal">
@@ -425,11 +577,35 @@
         </div>
     </section>
 
+    <!-- Research Projects Section -->
+    <section class="section section-alt" id="research">
+        <div class="container">
+            <h2 class="section-title reveal">
+                <span class="section-number">08.</span> Research & Publications
+            </h2>
+            <div class="research-coming-soon reveal">
+                <div class="research-icon-wrapper">
+                    <div class="research-pulse"></div>
+                    <i class="fas fa-flask"></i>
+                </div>
+                <h3>Research in Progress</h3>
+                <p>
+                    Currently working on research at the intersection of <strong>Computer Vision</strong> and <strong>Generative AI</strong> 
+                    as part of my M.Tech thesis at IIT Patna. Publications and detailed findings will be updated here soon.
+                </p>
+                <div class="research-status-bar">
+                    <div class="research-status-fill"></div>
+                </div>
+                <span class="research-status-text"><i class="fas fa-circle-notch fa-spin"></i> Will be updated soon</span>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section class="section" id="contact">
         <div class="container">
             <h2 class="section-title reveal">
-                <span class="section-number">07.</span> Get In Touch
+                <span class="section-number">09.</span> Get In Touch
             </h2>
             <div class="contact-content reveal">
                 <p class="contact-message">
@@ -440,19 +616,19 @@
                 <div class="contact-cards">
                     <a href="mailto:ayanava1999@gmail.com" class="contact-card glass-card">
                         <i class="fas fa-envelope"></i>
-                        <span>ayanava1999@gmail.com</span>
+                        <span>Email Me</span>
                     </a>
                     <a href="tel:+919556386605" class="contact-card glass-card">
                         <i class="fas fa-phone"></i>
-                        <span>+91-9556386605</span>
+                        <span>Call Me</span>
                     </a>
                     <a href="https://linkedin.com/in/ayanava99" target="_blank" rel="noopener" class="contact-card glass-card">
                         <i class="fab fa-linkedin-in"></i>
-                        <span>linkedin.com/in/ayanava99</span>
+                        <span>LinkedIn</span>
                     </a>
                     <a href="https://github.com/ayanava-99" target="_blank" rel="noopener" class="contact-card glass-card">
                         <i class="fab fa-github"></i>
-                        <span>github.com/ayanava-99</span>
+                        <span>GitHub</span>
                     </a>
                 </div>
                 <a href="mailto:ayanava1999@gmail.com" class="btn btn-primary btn-lg">
@@ -479,6 +655,8 @@
         </div>
     </footer>
 
+    <!-- Vanilla Tilt for interactive card hover -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

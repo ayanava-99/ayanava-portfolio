@@ -126,9 +126,8 @@ function initTypingEffect() {
         'ML Pipelines',
         'Intelligent Systems',
         'Data Platforms',
-        'NLP Applications',
-        'Cloud-Native Solutions',
-        'Production AI'
+        'APIs & microservices',
+        'Scalable Solutions'
     ];
 
     let phraseIndex = 0;
